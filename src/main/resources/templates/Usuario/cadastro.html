@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="cadastrarUsuario.js" defer ></script>
+</head>
+<body>
+    <div class="header">
+        <h2>Create Account</h2>
+    </div>
+    <div class="form-control">
+        <label for="nome">Nome</label>
+        <input type="text" placeholder="" id="nome" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+    </div>
+    <div class="form-control">
+        <label for="nome">Email</label>
+        <input type="email" placeholder="" id="email" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+    </div>
+    <div class="form-control">
+        <label for="nome">CPF</label>
+        <input type="text" placeholder="" id="CPF" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+    </div>
+    <div class="col-4 mb-3">
+        <div class="form-floating">
+            <select class="form-select" id="relacao" aria-label="Floating label select example">
+                <option value="" selected disabled>Selecione</option>
+                <option value="1">Paciente</option>
+                <option value="2">Médico(a)</option>
+            </select>
+            <label for="relacao">Relação</label>
+        </div>
+    </div>
+    <button id="enviar" >Cadastrar</button>
+</div>
+</body>
+</html>
