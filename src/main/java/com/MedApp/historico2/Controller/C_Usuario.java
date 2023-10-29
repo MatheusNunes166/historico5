@@ -48,7 +48,8 @@ public class C_Usuario {
     public String cadastrarUsuario(@RequestParam("nome") String nome,
                                    @RequestParam("email") String email,
                                    @RequestParam("CPF") String CPF,
+                                   @RequestParam("senha") String senha,
                                    @RequestParam("relacao")String relacao) {
-        return S_Usuario.cadastrarUsuario(nome, email, CPF,relacao);
+        return S_Usuario.cadastrarUsuario(nome, email, CPF, senha, relacao);
     }
 }

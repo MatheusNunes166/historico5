@@ -4,6 +4,7 @@ function cadastrarUsuario(){
 	let nome = $("#nome").val();
 	let email = $("#email").val();
 	let CPF = $("#CPF").val();
+	let senha = $("#senha").val();
 	let relacao =$("#relacao")[0].value;
 
 	$.ajax({
@@ -13,6 +14,7 @@ function cadastrarUsuario(){
 			nome:nome,
 			email:email,
 			CPF:CPF,
+			senha:senha,
 			relacao:relacao,
 		},
 		success:function(data){

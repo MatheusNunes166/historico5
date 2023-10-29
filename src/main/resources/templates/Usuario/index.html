@@ -10,34 +10,116 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="login.js" defer></script>
-    <title>Document</title>
+    <title>Login</title>
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.forma {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.forma input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.forma button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #7ACFA4;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.forma button:hover,.form button:active,.form button:focus {
+  background: #7ACFA4;
+}
+.forma .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.forma .message a {
+  color: #7ACFA4;
+  text-decoration: none;
+}
+.forma .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  background-color: #7ACFA4;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</style>
 </head>
 <body>
-<div class="container text-center">
-    <h1 class="mt-5 mb-3">Login</h1>
-    <div class="input-group has-validation mb-3">
-        <span class="input-group-text">@</span>
-        <div class="form-floating">
-            <input type="number" class="form-control" id="CPF" placeholder="CPF" required>
-            <label for="CPF">CPF</label>
-        </div>
-        <div class="invalid-feedback">
-            Por favor informe o CPF.
+<div class="login-page">
+    <div class="forma">
+        <div class="login-form">
+            <p class="text-titulo">Pagina de acesso</p>
+            <input type="number" placeholder="CPF" id="CPF" required/>
+            <input type="password" placeholder="Senha" id="senha" required/>
+            <button id="login">Login</button>
+            <p class="message">Sem cadastro? <a href="/cadastro">Crie uma conta</a></p>
         </div>
     </div>
-    <div class="input-group has-validation">
-        <span class="input-group-text">@</span>
-        <div class="form-floating">
-            <input type="password" class="form-control" id="senha" placeholder="Senha" required>
-            <label for="senha">Senha</label>
-        </div>
-        <div class="invalid-feedback">
-            Por favor informe a senha.
-        </div>
-    </div>
-    <div class="col-12 text-end">
-        <button id="login" class="btn btn-lg btn-primary mt-3">Login</button>
-    </div>
-</div>
 </body>
 </html>

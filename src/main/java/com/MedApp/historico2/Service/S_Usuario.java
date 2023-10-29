@@ -26,7 +26,7 @@ public class S_Usuario {
                 senha);
     }
 
-    public static String cadastrarUsuario(String nome, String email, String CPF,String relacao) {
+    public static String cadastrarUsuario(String nome, String email, String CPF, String senha, String relacao) {
         boolean podeSalvar = true;
         String mensagem = "";
         if(S_Generico.textoEstaVazio(nome)){
@@ -51,7 +51,7 @@ public class S_Usuario {
             m_usuario.setEmail(email);
             m_usuario.setCPF(Long.parseLong(CPF));
             m_usuario.setId_relacao(Long.parseLong(relacao));
-            m_usuario.setSenha(S_GeradorSenha.gerarSenha(5,3,2));
+            m_usuario.setSenha(senha);
 
             try{
                 r_usuario.save(m_usuario);
