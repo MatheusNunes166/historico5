@@ -18,12 +18,4 @@ public class C_Home {
             return "redirect:/";
         }
     }
-    @GetMapping("/home")
-    public String getPartialHome(HttpServletRequest request){
-        if(request.getHeader("Referer") != null){
-            return "home/partial_home";
-        }else{
-            return "redirect:/";
-        }
-    }
 }

@@ -1,21 +1,25 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.min.css" rel="stylesheet">
-  <script src="home.js" defer></script>
-  <script src="routes.js" defer></script>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="home.js" defer></script>
+    <script src="routes.js" defer></script>
+    <style>
     @import url(https://fonts.googleapis.com/css?family=Roboto:300);
     h6{
         color: #fff;
@@ -31,47 +35,50 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-  </style>
-  <title>Home</title>
+
+    </style>
+    <title>Home</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg" style="background-color: #7ACFA4; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand">
-      <img src="https://lh3.googleusercontent.com/pw/ADCreHd28ebAu1W0cwFBrUo6QoYNYM5yZCCece31Sh9E9UhW1WS6jb_6TT7qQv79Gmr-HyJfEK47pyWTcKTwOGcWAFWPHYDN8IY1nvqEOT-O6PygGr_FvnH-MoUDmL9j98mI4Bg2vbpuCM6IdfN1N774VnEwqLMaq6QUXdQzcBGRhNfYo6EW9kuA4a0bIfHXVMzVbSEvF9W0PYSHFEjwZtn8w-zTejzvdtVeQSty6-lPdoGVKDFvpUclmIual04TNiY2QjFog9vKyv47D5x43kZ-88K1gp4I9Asj4ka8u2xK26yi9mfYxGKGyqdDm9jIQucaXlprHwp7_dUfcCrKpe8008r9gpe8UUG5YU-qwaK4OXCo7BYbMUaBzPpNcNAk3o61B6lfPCyxEHNIMdvXXMpVEjaTqI3HzHCZb8Nf9RRpueFlMVVHixtSVprtiTBsIvFzeCwvSP6B5ijMzeDslBgmAQ2M1BGmLVYJeiCYm8Ll1COmoJJuXl2h_kHD6cmsAS37zUsr-wUBmgQsbHpeyTPjGc6DHhIDer4v3xMmKKtRaSQqIRvLUdpa5kA8LQb5SG4_P-u4SxGBRoJUTonXECJb_7XRio65b0agzf7jrrvc03DlOh6eAntqpAtYqLlEoToyCMYK-kE8WghgxC76JtDiew26wWG36wvL6BApMyXKMUd5ddmkI-8iuJVn89VoD_5LizpEUyNVcRv79ubifhlF8UDJae1FQmKuk60b11CKhBeIf9RZ0iFg3esKK-_9itKnulJ1haOlXWCIbiZSev-1hZ7f6oG5VrFOFXLL6C6c0rz3guYUpt5Sh7rh3Oly3tqArwOAFcEKChsxYVxTzdYxLuvwxKyufM9su1O3sl2Y_4tn2Kxek14lPYlBX5QvlyARfw21yj050tOLL8LNVGC_3wP1XA=w1908-h334-s-no-gm?authuser=0"
-           height="30" width="160">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/home">Home</a>
-        </li>
+<nav class="navbar navbar-expand-lg" style="background-color: #6C95BB; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);"
+     data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand">
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHc-8eXeG056bQx4PtJaNKg63VbP0UaVYQDlH7BT_r8aQcqHptk_3rXu4PZcwzOA5XwkLjNohto6dpgKMZQJh3T7nslOundlGl-NtHTlswoA_cDNZj2aVIeLY_0YaEecwTu7pZOFUdq4qzQ9H8B9ORr5-LA6kv43zSj7c2Na_ueA-FyAbn9p2s4dXav_wTGYqt3oIVZQ26bqbxhKgnNxzCDkJ1fFb6JVdiepwt9FFyUWwWMbDh1sL5b-Q1L_hvjPpP-jTp4dIYDd3t-JawYdDxaFmij3ERRTKhgtzgev3r5Uibx3e34q1bu90K56Oqt8cnnWckdOPrwFp3mOQ8ffJT91hSe3dMkA9Tx7Ocq6YWIBRKR3Q289fJFzjpyo4jnfNrFa6K19LzzTJdgS-L5r2bI8W5H-tCZfCFOAVoUdXDdsjm9uKkOxp_TVHFo7EHuufnauCu6UDakH7phxxUM0AbfnbMOzogN-YTHlLwTLJ-QoXMa1xZT_HX0eI9cjWdpaNBAxbeCmOO3Fm_BgphFurkaZwHhRlFD9ojKm--Zc2IbconYk7x9js9A1OvFP6FZXmf2PyjgCQNY73Q6zwbcFzse5soJaLUTlC8fH9Fbzqi4ecgCwfuOgEGN4_nWbgkQdVwd0kn79W7W1koAMPsV6lr7pmmNsqr1qR-jTVCtKpm3Csp8PXxfCZCUL8IleCyy3mNiIa32YxCI3ubTx2pldE1IJKj-iHR_1y0f6CFz04R-Y1r9wFLEqFYe4o4qlGjYsUuPUrZWzxBCF_kcpgEJXx1GtDWJTiI-y9fwsLC0kckAfHq60USOumhh8zDrkSSR-JP9ovpzqzSekg0cm2SuHzvmJeXMF0hKklxz_2xkAceaLWIlVS6FibAx-3zMA7IJRpqk5qk1Uv69yOgt2tPeTiOAZiQ=w1588-h379-s-no-gm?authuser=0" height="40" width="170"></a>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Cadastro
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="/cadastro">cadastroUsuario</a>
-            </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-          </ul>
-        </li>
-      </ul>
-      <div class="d-flex">
-        <div style="width: 100%;">
-          <h6 class="mt-1" th:text="${'Bem vindo: ' + usuario.nome}"></h6>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cadastro
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="/cadastro">cadastroUsuario</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <div style="width: 100%;">
+                    <h6 class="mt-1" th:text="${'Bem vindo: ' + usuario.nome}"></h6>
+                </div>
+                <div class="text-end">
+                    <a href="/logout" class="btn btn-sm" style="background-color: #C65959;">Sair</a>
+                </div>
+            </div>
         </div>
-        <div class="text-end">
-          <a href="/logout" class="btn btn-sm" style="background-color: #C65959;">Sair</a>
-        </div>
-      </div>
     </div>
-  </div>
 </nav>
 <div id="mainFrame" class="container">
 </div>
